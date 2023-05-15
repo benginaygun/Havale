@@ -1,0 +1,97 @@
+.financial_control_main {
+  margin-top: 25px;
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  justify-content: center;
+  align-items: center;
+  gap: 30px 20px;
+  grid-template-areas:
+    "... phone ..."
+    "hesap phone paraCek"
+    "gonder phone odemeAl"
+    "eft phone taniyan"
+    "gizli phone bildirim"
+    "... phone ...";
+}
+
+.financial_control_main-item:nth-child(1) {
+  grid-area: hesap;
+}
+.financial_control_main-item:nth-child(2) {
+  grid-area: gonder;
+}
+.financial_control_main-item:nth-child(3) {
+  grid-area: eft;
+}
+.financial_control_main-item:nth-child(4) {
+  grid-area: gizli;
+}
+.financial_control_main-item:nth-child(5) {
+  grid-area: paraCek;
+}
+.financial_control_main-item:nth-child(6) {
+  grid-area: odemeAl;
+}
+.financial_control_main-item:nth-child(7) {
+  grid-area: taniyan;
+}
+.financial_control_main-item:nth-child(8) {
+  grid-area: bildirim;
+}
+
+.financial_control_main_image {
+  grid-area: phone;
+}
+
+.financial_control_main-item {
+  max-width: 280px;
+  &_title {
+    h4 {
+      font-size: 1.2rem;
+      font-weight: 500;
+      color: #0093ff;
+    }
+  }
+  &_desc {
+    p {
+      font-size: 0.8rem;
+      color: #5a5a5a;
+    }
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .financial_control_main {
+    grid-template-areas:
+      "hesap paraCek"
+      "gonder odemeAl"
+      "eft taniyan"
+      "gizli bildirim";
+    &_image {
+      display: none;
+    }
+    &-item {
+      background-color: #eee;
+      padding: 10px 15px;
+      border-radius: 10px;
+      min-height: 120px;
+      display: grid;
+      align-content: center;
+    }
+  }
+}
+
+@media screen and (max-width: 587px) {
+  .financial_control_main {
+    grid-template-columns: auto;
+    grid-template-areas:
+      "hesap"
+      "paraCek"
+      "gonder"
+      " odemeAl"
+      "eft"
+      "taniyan"
+      "gizli"
+      "bildirim";
+  }
+}

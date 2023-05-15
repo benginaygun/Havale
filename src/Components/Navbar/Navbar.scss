@@ -1,0 +1,103 @@
+.navbar_logo{
+    h2{
+        font-weight: 400;
+        font-size: 30px;
+    }
+}
+
+.navbar{
+    background-color: #fff;
+    padding: 10px 0;
+    position: fixed;
+    z-index: 10;
+    width: 100%;
+    .navbar_content {
+        display: grid;
+        padding: 0 25px;
+        align-items: center;
+        grid-template-columns: repeat(3,auto);
+        justify-content: space-between;
+        .navbar_main{
+            display: grid;
+            grid-template-columns: auto;
+            justify-content: space-between;
+            gap: 150px;
+        }
+    }
+}
+
+.navbar_links{
+    display: flex;
+    gap: 30px;
+    &-item{
+        .navbar_link{
+            text-decoration: none;
+            color: #000;
+            font-weight: 400;
+            font-size: 15px;
+            padding: 10px 0;
+            transition: color 0.5s;
+            &:hover{
+                color: #1CA2FD;
+            }
+        }
+    }
+}
+
+.navbar_profile_link{
+    font-size: 15px;
+    text-decoration: none;
+    color: #000;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    transition: color 0.5s;
+    &:hover{
+        color: #1CA2FD;
+    }
+}
+
+.navbar_logo_link{
+    text-decoration: none;
+    color: #000;
+    font-weight: 300;
+}
+
+.navbar_profile{
+    display: flex;
+    gap: 30px;
+    button{
+        border: none;
+        background-color: transparent;
+        font-size: 20px;
+        display: none;
+    }
+}
+
+@media screen and (max-width:767px) {
+    .navbar{
+        .navbar_content{
+            grid-template-columns: repeat(2,auto);
+            .navbar_main{
+                justify-content: end;
+                gap: 0;
+            }
+            .navbar_links{
+                display: none;
+            }
+            .navbar_profile_link{
+                span{
+                    display: none;
+                }
+                font-size: 26px;
+            }
+            .navbar_profile{
+                button{
+                    display: block;
+                    font-size: 26px;
+                }
+            }
+        }
+    }
+}
+

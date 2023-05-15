@@ -1,0 +1,20 @@
+.financial_control_text{
+    text-align: center;
+    .financial_control_title{
+        h2{
+            font-size: 2rem;
+            font-weight: 600;
+        }
+    }
+    .financial_control_desc{
+        margin-top: 5px;
+        p{
+            color: #9f9f9f;
+            font-size: 0.9rem;
+        }
+    }
+}
+
+.financial_control{
+    padding: 50px 25px;
+}
