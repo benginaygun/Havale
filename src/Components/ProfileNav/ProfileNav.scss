@@ -1,0 +1,104 @@
+.profile_nav_preview{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    &_image{
+        background-color: #A3A3A3;
+        padding: 12px;
+        border-radius: 50%;
+        h2{
+            font-weight: 500;
+        }
+    }
+    &_fullname{
+        h4{
+            font-size: 1.1rem;
+        }
+    }
+}
+
+.profile_nav_link_box{
+    margin-top: 45px;
+    .profile_nav_link{
+        display: grid;
+        grid-template-columns: repeat(2,auto);
+        align-items: center;
+        text-decoration: none;
+        color: #545454;
+        gap: 10px;
+        font-size: 1.7rem;
+        span{
+            font-size: 1rem;
+            color: #000;
+        }
+    }
+}
+
+.profile_nav_link.active{
+    color: #00D9FF;
+    span{
+        color: #00D9FF;
+    }
+}
+
+.profile_nav_links{
+    margin-left: 10px;
+}
+
+.profile_nav{
+    max-width: 204px;
+}
+
+@media screen and (max-width:767px) {
+    .profile_nav{
+        max-width: 1000px;
+    }
+    .profile_nav_links{
+        margin-left: 0;
+        margin-bottom: 20px;
+    }
+    .profile_nav_links{
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+        align-items: center;
+        justify-content: space-between;
+        // gap: 5px;
+    }
+    .profile_nav_link_box{
+        .profile_nav_link{
+            grid-template-columns: auto;
+            justify-content: center;
+            svg{
+                margin: 0 auto;
+            }
+            span{
+                text-align: center;
+            }
+        }
+    }
+}
+@media screen and (max-width:578px) {
+    .profile_nav{
+        max-width: 1000px;
+    }
+    .profile_nav_links{
+        margin-bottom: 50px;
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        align-items: center;
+        justify-content: space-between;
+        // gap: 5px;
+    }
+    .profile_nav_link_box{
+        .profile_nav_link{
+            grid-template-columns: auto;
+            justify-content: center;
+            svg{
+                margin: 0 auto;
+            }
+            span{
+                text-align: center;
+            }
+        }
+    }
+}

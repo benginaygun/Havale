@@ -1,0 +1,38 @@
+.user_settings_nav_links {
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  justify-content: start;
+  gap: 30px;
+  .user_settings_nav_link {
+    font-size: 0.8rem;
+    border-bottom: none;
+    padding-bottom: 11px;
+    text-decoration: none;
+    color: #000;
+    font-weight: 400;
+  }
+  .user_settings_nav_link:hover {
+    border-bottom: 3px solid #004bcc;
+  }
+  .user_settings_nav_link.active {
+    border-bottom: 3px solid #004bcc;
+  }
+}
+
+.user_settings_nav {
+  margin-top: 15px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #757575;
+}
+
+@media screen and (max-width:420px) {
+  .user_settings_nav_links{
+    .user_settings_nav_link:hover {
+      color:#004bcc;
+    }
+    .user_settings_nav_link.active {
+      color:#004bcc;
+      border: none;
+    }
+  }
+}

@@ -1,0 +1,66 @@
+.bank_info_text{
+    .bank_info_title{
+        h4{
+            font-size: 1.3rem;
+            font-weight: 600;
+        }
+    }
+    .bank_info_desc{
+        max-width: 700px;
+        margin-top: 5px;
+        p{
+            font-size: 0.8rem;
+            color: #383838;
+        }
+    }
+}
+
+.bank_info_content{
+    margin-top: 15px;
+}
+
+.bank_info_form{
+    margin-top: 25px;
+    max-width: 400px;
+    form{
+        display: grid;
+        gap: 20px;
+    }
+    label{
+        display: block;
+        font-size: 0.8rem;
+        font-weight: 500;
+        margin-bottom: 5px;
+    }
+    input{
+        height: 35px;
+        padding: 0 3px;
+        outline: none;
+        border: 1px solid #000;
+        width: 100%;
+        border-radius: 7px;
+    }
+    &_button{
+        margin-top: 10px;
+        button{
+            color: #fff;
+            background-color: #00D9FF;
+            border: none;
+            padding: 12px 30px;
+            width: 100%;
+            border-radius: 7px;
+            font-family: 'Roboto Slab',sans-serif;
+            transition: 0.5s;
+            &:hover{
+                background-color: #00bbdc;
+                cursor: pointer;
+            }
+        }
+    }
+}
+
+@media screen and (max-width:767px) {
+    .bank_info_form{
+        margin: 25px auto 0 auto;
+    }
+}
