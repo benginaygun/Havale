@@ -1,0 +1,85 @@
+.transfer_list-item{
+    background-color: #fff;
+    display: grid;
+    grid-template-columns: auto 1fr;
+    align-items: center;
+    justify-content: start;
+    padding: 10px 15px;
+}
+
+.transfer_list-item_main{
+    padding: 10px 20px;
+    display: grid;
+    grid-template-columns: repeat(2,auto);
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #eee;
+}
+
+.transfer_list-item_info{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.transfer_list-item_icon{
+    max-width: 50px;
+    display: flex;
+    align-items: center;
+    img{
+        width: 100%;
+    }
+}
+
+.transfer_list-item_title{
+    h5{
+        font-weight: 400;
+    }
+}
+
+.transfer_list-item_desc{
+    margin-top: 5px;
+    p{
+        color: #00D9FF;
+        font-size: 0.7rem;
+    }
+}
+
+.transfer_list-item_info_value{
+    p{
+        font-weight: 400;
+        font-size: 0.9rem;
+    }
+}
+
+.transfer_list-item_info_date{
+    margin-top: 5px;
+    p{
+        font-weight: 400;
+        font-size: 0.8rem;
+    }
+}
+
+.transfer_list-item_info_button{
+    button{
+        background-color: transparent;
+        border: none;
+        font-size: 1.1rem;
+        &:hover{
+            cursor: pointer;
+        }
+    }
+}
+.balance_add{
+    color: rgb(0, 197, 0);
+}
+
+.balance_sub{
+    color: red;
+}
+
+@media screen and (max-width:400px) {
+    .transfer_list-item_icon{
+        max-width: 35px;
+    }
+}

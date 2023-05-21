@@ -1,0 +1,24 @@
+.money_transfer_site_content{
+    max-width: 350px;
+    margin: 25px auto 0 auto;
+}
+
+.money_transfer_site_slider-item{
+    max-width: 70px;
+    img{
+        width: 100%;
+    }
+}
+
+.slick-slide>div{
+    display: flex;
+    justify-content: center;
+}
+
+
+.slick-arrow{
+    color: #000;
+    &:hover{
+        color: #000;
+    }
+}

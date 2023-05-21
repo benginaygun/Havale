@@ -1,19 +1,10 @@
+import MyBalance from '../MyBalance/MyBalance';
 import './Withdrawal.scss';
 
 const Withdrawal = () => (
     <div className="withdrawal">
         <div className="withdrawal_content">
-            <div className="withdrawal_balance">
-                <div className="withdrawal_balance_quantity">
-                    <h3>290,00 TL</h3>
-                </div>
-                <div className="withdrawal_balance_desc">
-                    <p>Toplam Bakiye</p>
-                </div>
-                <div className="withdrawal_balance_button">
-                    <button>Tüm bakiyeyi çek</button>
-                </div>
-            </div>
+           <MyBalance isAll/>
             <div className="withdrawal_form">
                 <form>
                     <div className="withdrawal_form_bank_address">

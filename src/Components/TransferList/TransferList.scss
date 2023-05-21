@@ -1,0 +1,31 @@
+.transfer_list_title{
+    h4{
+        font-size: 1rem;
+        font-weight: 500;
+    }
+}
+
+.transfer_list_items{
+    border-radius: 10px;
+    overflow: hidden;
+    margin-top: 15px;
+}
+
+.transfer_list_text{
+    margin-top: 15px;
+    padding: 0 10px;
+    display: grid;
+    grid-template-columns: repeat(2,auto);
+    justify-content: space-between;
+    align-items: center;
+    button{
+        color:#00D9FF;
+        border: none;
+        background-color: transparent;
+        transition: 0.5s;
+        &:hover{
+            cursor: pointer;
+            color: #01afce;
+        }
+    }
+}

@@ -6,7 +6,7 @@ const WalletNav = () => (
     <div className="wallet_nav_links">
       <div className="wallet_nav_links-item">
         <NavLink
-          to={"/profile/wallet/withdrawal"}
+          to={"/profile/moneytransfer/withdrawal"}
           className="wallet_nav_link"
         >
           Para Çek
@@ -14,7 +14,7 @@ const WalletNav = () => (
       </div>
       <div className="wallet_nav_links-item">
         <NavLink
-          to={"/profile/wallet/addbalance"}
+          to={"/profile/moneytransfer/addbalance"}
           className="wallet_nav_link"
         >
           Para Ekle
@@ -22,7 +22,7 @@ const WalletNav = () => (
       </div>
       <div className="wallet_nav_links-item">
         <NavLink
-          to={"/profile/wallet/transfer"}
+          to={"/profile/moneytransfer/transfer"}
           className="wallet_nav_link"
         >
           Para Transferi

@@ -22,7 +22,7 @@ const ProfileNav = () => (
       </div>
       <div className="profile_nav_links">
         <div className="profile_nav_link_box">
-          <NavLink to={"/profile/bilets"} className="profile_nav_link">
+          <NavLink to={"/profile/moneytransfer"} className="profile_nav_link">
             <FontAwesomeIcon icon={faArrowRightArrowLeft} />
             <span>Para Transferi</span>
           </NavLink>

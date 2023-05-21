@@ -1,0 +1,57 @@
+.money_transfer_form_transfer_fee{
+    padding: 0 5px 10px 1px;
+    border-bottom: 1px solid #000;
+    display: flex;
+    justify-content: space-between;
+    p{
+        font-size: 0.75rem;
+    }
+}
+
+.money_transfer_form_widthdrawal_sum{
+    padding: 0 5px 0 1px;
+    display: flex;
+    justify-content: space-between;
+    p{
+        font-size: 0.75rem;
+    }
+}
+
+.money_transfer_form_button{
+    margin-top: 10px;
+    button{
+        background-color: #00D9FF;
+        width: 100%;
+        border: none;
+        color: #fff;
+        padding: 10px 20px;
+        border-radius: 10px;
+        transition: 0.5s;
+        &:hover{
+            background-color: #00bcdd;
+            cursor: pointer;
+        }
+    }
+}
+
+.money_transfer_form{
+    max-width: 400px;
+    margin: 25px auto 0 auto;
+    label{
+        display: block;
+        font-size: 0.8rem;
+        margin-bottom: 5px;
+    }
+    input{
+        width: 100%;
+        height: 35px;
+        font-family: 'Roboto Slab' , sans-serif;
+        padding: 0 5px;
+        border: 1px solid #000;
+        border-radius: 7px;
+    }
+    form{
+        display: grid;
+        gap: 10px;
+    }
+}
