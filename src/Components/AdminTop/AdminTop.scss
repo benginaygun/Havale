@@ -1,0 +1,29 @@
+.admin_top_content{
+    display: grid;
+    grid-template-columns: repeat(2,auto);
+    justify-content: space-between;
+    padding: 20px 35px;
+    h2{
+        font-size: 2.2rem;
+        font-weight: 400;
+    }
+    p{
+        font-size: 1rem;
+    }
+    .admin_top_profile_image{
+        background-color: #eee;
+        padding: 12px;
+        border-radius: 50%;
+        h4{
+            font-weight: 500;
+            font-size: 1.2rem;
+        }
+
+    }
+}
+
+.admin_top_profile{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}

@@ -19,7 +19,7 @@ const AdminSidebar = () => (
       <div className="admin_sidebar_main">
         <div className="admin_sidebar_links">
           <div className="admin_sidebar_links-item">
-            <NavLink to={"/"} className="admin_sidebar_link">
+            <NavLink to={"/hevaleadmin/dashboard"} className="admin_sidebar_link">
               <div className="admin_sidebar_links-item_icon">
                 <img src={dashboard} alt="admin link" />
               </div>
@@ -29,7 +29,7 @@ const AdminSidebar = () => (
             </NavLink>
           </div>
           <div className="admin_sidebar_links-item">
-            <NavLink to={"/"} className="admin_sidebar_link">
+            <NavLink to={"/hevaleadmin/partners"} className="admin_sidebar_link">
               <div className="admin_sidebar_links-item_icon">
                 <img src={partners} alt="admin link" />
               </div>
@@ -39,7 +39,7 @@ const AdminSidebar = () => (
             </NavLink>
           </div>
           <div className="admin_sidebar_links-item">
-            <NavLink to={"/"} className="admin_sidebar_link">
+            <NavLink to={"/hevaleadmin/invests"} className="admin_sidebar_link">
               <div className="admin_sidebar_links-item_icon">
                 <img src={allInvests} alt="admin link" />
               </div>
@@ -49,7 +49,7 @@ const AdminSidebar = () => (
             </NavLink>
           </div>
           <div className="admin_sidebar_links-item">
-            <NavLink to={"/"} className="admin_sidebar_link">
+            <NavLink to={"/hevaleadmin/withdrawals"} className="admin_sidebar_link">
               <div className="admin_sidebar_links-item_icon">
                 <img src={allWithdrawals} alt="admin link" />
               </div>
@@ -59,7 +59,7 @@ const AdminSidebar = () => (
             </NavLink>
           </div>
           <div className="admin_sidebar_links-item">
-            <NavLink to={"/"} className="admin_sidebar_link">
+            <NavLink to={"/hevaleadmin/users"} className="admin_sidebar_link">
               <div className="admin_sidebar_links-item_icon">
                 <img src={activeUsers} alt="admin link" />
               </div>

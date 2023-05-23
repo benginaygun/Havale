@@ -2,6 +2,8 @@ import { useEffect } from "react";
 import "./HevaleAdmin.scss";
 import CustomContainer from "../../Components/CustomContainer/CustomContainer";
 import AdminSidebar from "../../Components/AdminSidebar/AdminSidebar";
+import { Route, Routes } from "react-router-dom";
+import AdminDashboard from "../../Components/AdminDashboard/AdminDashboard";
 
 const HevaleAdmin = () => {
   useEffect(() => {
@@ -16,7 +18,12 @@ const HevaleAdmin = () => {
   return (
     <div className="hevale_admin">
       <CustomContainer maxWidth={1920}>
-        <AdminSidebar/>
+        <div className="hevale_admin_content">
+          <AdminSidebar />
+          <Routes>
+            <Route path="/dashboard/*" element={<AdminDashboard />} />
+          </Routes>
+        </div>
       </CustomContainer>
     </div>
   );
