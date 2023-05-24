@@ -1,0 +1,11 @@
+.admin_withdrawals_table{
+    background-color: #F4F4F4;
+    padding: 10px 25px;
+    border-radius: 10px;
+}
+
+.admin_withdrawals_table_heading{
+    display: grid;
+    grid-template-columns: repeat(6,auto);
+    // gap: 50px;
+}

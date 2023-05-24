@@ -33,7 +33,10 @@
 }
 
 .admin_sidebar_links-item {
-//   max-width: fit-content;
+  //   max-width: fit-content;
+  display: grid;
+  align-items: center;
+  text-align: center;
 }
 
 .admin_sidebar_link.active {
@@ -50,6 +53,7 @@
 .admin_sidebar_links-item_icon {
   display: grid;
   align-items: center;
+  justify-content: center;
 }
 
 .admin_sidebar_links {
@@ -57,4 +61,52 @@
   display: grid;
   justify-content: center;
   gap: 30px;
+}
+
+@media screen and (max-width: 1350px) {
+  .admin_sidebar {
+    background-color: #f4f4f4;
+    position: sticky;
+    top: 0;
+    max-width: 100%;
+    width: 100%;
+    height: fit-content;
+  }
+  .admin_sidebar_links {
+    grid-template-columns: repeat(5, auto);
+    padding: 25px 0;
+  }
+  .admin_sidebar_logo {
+    margin: 0;
+  }
+  .admin_sidebar_content {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    align-items: center;
+    h2 {
+      margin: 0;
+      font-size: 2rem;
+    }
+  }
+  .admin_sidebar_link {
+    font-size: 0.8rem;
+  }
+}
+
+@media screen and (max-width: 1050px) {
+  .admin_sidebar_content {
+    grid-template-columns: auto;
+    padding: 0 25px;
+  }
+  .admin_sidebar_logo {
+    padding-top: 10px;
+  }
+}
+
+@media screen and (max-width:767px) {
+  .admin_sidebar_link {
+    display: grid;
+    justify-content: center;
+    font-size: 1rem;
+  }
 }

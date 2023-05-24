@@ -2,3 +2,9 @@
     display: grid;
     grid-template-columns: 300px auto;
 }
+
+@media screen and (max-width:1350px) {
+    .hevale_admin_content{
+        grid-template-columns: auto;
+    }
+}

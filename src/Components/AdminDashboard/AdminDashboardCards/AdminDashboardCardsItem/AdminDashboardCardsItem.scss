@@ -1,0 +1,50 @@
+.admin_dashboard_cards-item{
+    display: grid;
+    align-items: center;
+    margin: 0 auto;
+    grid-template-columns: repeat(2,auto);
+    justify-content: start;
+    gap: 25px;
+    max-width: 400px;
+    width: 100%;
+    padding: 25px;
+    border-radius: 20px;
+    h3{
+        font-size: 2rem;
+        font-weight: 400;
+        color: #fff;
+    }
+    p{
+        color: #fff;
+        font-size: 0.85rem;
+    }
+
+    &_image{
+        width: 50px;
+        img{
+            width: 100%;
+        }
+    }
+}
+
+@media screen and (max-width:1400px) {
+    .admin_dashboard_cards-item{
+        h3{
+            font-size: 1.5rem;
+        }
+        p{
+            font-size: 0.7rem;
+        }
+    }
+}
+
+@media screen and (max-width:992px) {
+    .admin_dashboard_cards-item{
+        h3{
+            font-size: 1.8rem;
+        }
+        p{
+            font-size: 0.8rem;
+        }
+    }
+}

@@ -1,0 +1,12 @@
+.admin_dashboard_cards{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    justify-content: center;
+    gap: 20px;
+}
+
+@media screen and (max-width:992px) {
+    .admin_dashboard_cards{
+        grid-template-columns: repeat(2,1fr);
+    }
+}

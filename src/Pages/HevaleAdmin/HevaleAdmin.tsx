@@ -4,6 +4,7 @@ import CustomContainer from "../../Components/CustomContainer/CustomContainer";
 import AdminSidebar from "../../Components/AdminSidebar/AdminSidebar";
 import { Route, Routes } from "react-router-dom";
 import AdminDashboard from "../../Components/AdminDashboard/AdminDashboard";
+import AdminWithdrawals from "../../Components/AdminWithdrawals/AdminWithdrawals";
 
 const HevaleAdmin = () => {
   useEffect(() => {
@@ -22,6 +23,7 @@ const HevaleAdmin = () => {
           <AdminSidebar />
           <Routes>
             <Route path="/dashboard/*" element={<AdminDashboard />} />
+            <Route path="/withdrawals/*" element={<AdminWithdrawals />} />
           </Routes>
         </div>
       </CustomContainer>
