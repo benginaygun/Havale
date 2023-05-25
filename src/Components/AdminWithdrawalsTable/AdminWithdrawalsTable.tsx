@@ -1,4 +1,6 @@
+import { AdminWithdrawalsTableData } from '../../Data/AdminWithdrawalsTableData';
 import './AdminWithdrawalsTable.scss';
+import AdminWithdrawalsTableItem from './AdminWithdrawalsTableItems/AdminWithdrawalsTableItem';
 
 const AdminWithdrawalsTable = () => (
     <div className="admin_withdrawals_table">
@@ -17,7 +19,11 @@ const AdminWithdrawalsTable = () => (
             </div>
        </div>
        <div className="admin_withdrawals_table_main">
-        
+        {
+            AdminWithdrawalsTableData.map((data,index) => (
+                <AdminWithdrawalsTableItem key={index} {...data}/>
+            ))
+        }
        </div>
     </div>
 )

@@ -1,4 +1,4 @@
-export interface IAdminWithdrawalsTableItemProps {
+export interface IAdminInvestsTableItemProps {
     fullname:string,
     website:string,
     userId:string,

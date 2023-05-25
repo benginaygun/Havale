@@ -1,0 +1,145 @@
+.admin_invests_table-item {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    padding: 10px 25px;
+    align-items: center;
+    border-bottom: 1px solid #7e7e7e;
+  }
+  
+  .admin_invests_table-item:first-child {
+    border-top: 1px solid #7e7e7e;
+  }
+  
+  .admin_invests_table-item:last-child{
+      border: none;
+  }
+  
+  .admin_invests_table-item_user_name {
+    p {
+      font-size: 0.7rem;
+      color: #3de761;
+    }
+  }
+  
+  .admin_invests_table-item_user_website {
+    p {
+      font-size: 0.7rem;
+    }
+  }
+  
+  .admin_invests_table-item_user_id {
+    p {
+      font-size: 0.7rem;
+    }
+  }
+  
+  .admin_invests_table-item_user_username {
+    p {
+      font-size: 0.7rem;
+    }
+  }
+  
+  .admin_invests_table-item_bank_fullname {
+    p {
+      font-size: 0.7rem;
+      color: red;
+    }
+  }
+  
+  .admin_invests_table-item_bank_iban {
+    p {
+      font-size: 0.7rem;
+    }
+  }
+  
+  .admin_invests_table-item_bank_name {
+    p {
+      font-size: 0.7rem;
+      color: #3de761;
+    }
+  }
+  
+  .admin_invests_table-item_quantity {
+    p {
+      font-size: 0.8rem;
+    }
+  }
+  
+  .admin_invests_table-item_state {
+    p {
+      font-size: 0.8rem;
+    }
+  }
+  
+  .admin_invests_table-item_accept {
+    button {
+      border: none;
+      background-color: transparent;
+      color: #3de761;
+      font-size: 1.2rem;
+      display: flex;
+      gap: 10px;
+      align-items: center;
+      font-family: "Poppins", sans-serif;
+      &:hover {
+        cursor: pointer;
+      }
+      span {
+        color: #000;
+        font-size: 0.8rem;
+      }
+    }
+  }
+  
+  .admin_invests_table-item_reject {
+    button {
+      border: none;
+      background-color: transparent;
+      color: red;
+      font-size: 1.2rem;
+      display: flex;
+      gap: 10px;
+      align-items: center;
+      font-family: "Poppins", sans-serif;
+      &:hover {
+        cursor: pointer;
+      }
+      span {
+        color: #000;
+        font-size: 0.8rem;
+      }
+    }
+  }
+  
+  @media screen and (max-width:578px) {
+      .admin_invests_table-item_accept{
+          height: 100%;
+          button{
+              width: 100%;
+              height: 100%;
+              svg{
+                  margin: 0 auto;
+              }
+          }
+          span{
+              display: none;
+          }
+      }
+      .admin_invests_table-item_reject{
+          height: 100%;
+          button{
+              width: 100%;
+              height: 100%;
+              svg{
+                  margin: 0 auto;
+              }
+          }
+          span{
+              display: none;
+          }
+      }
+      .admin_invests_table-item{
+          grid-template-columns: repeat(4,1fr) 50px 50px;
+          gap: 10px;
+      }
+  }

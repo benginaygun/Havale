@@ -1,11 +1,11 @@
-.admin_withdrawals_table{
+.admin_invests_table{
     background-color: #F4F4F4;
     padding: 10px 0;
     border-radius: 10px;
     text-align: center;
 }
 
-.admin_withdrawals_table_heading{
+.admin_invests_table_heading{
     display: grid;
     grid-template-columns: repeat(6,1fr);
     padding: 15px 25px;
@@ -16,7 +16,7 @@
 }
 
 @media screen and (max-width:578px) {
-    .admin_withdrawals_table_heading{
+    .admin_invests_table_heading{
         grid-template-columns: repeat(4,1fr) 50px 50px;
     }
 }
