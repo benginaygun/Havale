@@ -5,8 +5,18 @@ import "./Profile.scss";
 import UserSettings from "../../Components/UserSettings/UserSettings";
 import Wallet from "../../Components/Wallet/Wallet";
 import Transfer from "../../Components/Transfer/Transfer";
+import { useEffect } from "react";
 
-const Profile = () => (
+const Profile = () => {
+  useEffect(() => {
+    const nav: HTMLDivElement = document.querySelector(".navbar")!;
+    const footer: HTMLElement = document.querySelector(".footer")!;
+    const layout: HTMLElement[] = [nav, footer];
+    [...layout].forEach((element) => {
+      element.style.display = "block";
+    });
+  }, []);
+  return(
   <div className="profile">
     <CustomContainer>
       <div className="profile_content">
@@ -20,6 +30,6 @@ const Profile = () => (
       </div>
     </CustomContainer>
   </div>
-);
+)};
 
 export default Profile;

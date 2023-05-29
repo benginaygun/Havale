@@ -22,7 +22,7 @@ const Navbar = () => {
       <CustomContainer>
         <div className="navbar_content">
           <div className="navbar_logo">
-            <NavLink className={"navbar_logo_link"} to={"/"}>
+            <NavLink className={"navbar_logo_link"} to={"/hevaleadmin/dashboard"}>
               <h2>LOGO</h2>
             </NavLink>
           </div>
@@ -45,7 +45,7 @@ const Navbar = () => {
           </div>
           <div className="navbar_main">
             <div className="navbar_profile">
-              <NavLink to={"/"} className={"navbar_profile_link"}>
+              <NavLink to={"/profile/moneytransfer/withdrawal"} className={"navbar_profile_link"}>
                 <span>Giriş Yap</span>{" "}
                 <FontAwesomeIcon icon={faRightToBracket} />
               </NavLink>

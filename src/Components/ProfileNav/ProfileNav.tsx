@@ -22,7 +22,7 @@ const ProfileNav = () => (
       </div>
       <div className="profile_nav_links">
         <div className="profile_nav_link_box">
-          <NavLink to={"/profile/moneytransfer"} className="profile_nav_link">
+          <NavLink to={"/profile/moneytransfer/withdrawal"} className="profile_nav_link">
             <FontAwesomeIcon icon={faArrowRightArrowLeft} />
             <span>Para Transferi</span>
           </NavLink>
@@ -34,7 +34,7 @@ const ProfileNav = () => (
           </NavLink>
         </div>
         <div className="profile_nav_link_box">
-          <NavLink to={"/profile/usersettings"} className="profile_nav_link">
+          <NavLink to={"/profile/usersettings/userinfo"} className="profile_nav_link">
             <FontAwesomeIcon icon={faUserGear} />
             <span>Kullancı Bilgileri</span>
           </NavLink>
