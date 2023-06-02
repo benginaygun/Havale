@@ -29,7 +29,7 @@ export const loginUser =
         });
       };
       SetCookie('token',res.data.token);
-      localStorage.setItem('token',res.data.token);
+      
     } catch (e: any) {
       console.error(e);
       dispatch(loginFailure(e.message));

@@ -1,4 +1,4 @@
-import { NavLink } from "react-router-dom";
+import { NavLink, useNavigate } from "react-router-dom";
 import "./ProfileNav.scss";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
@@ -8,8 +8,23 @@ import {
   faUserGear,
   faWallet,
 } from "@fortawesome/free-solid-svg-icons";
+import { useAppDispatch } from "../../redux/store/store";
+import { logoutUser } from "../../redux/slices/auth/actionsCreators";
+import Cookies from "js-cookie";
+import { getUserInfo } from "../../redux/slices/user/actionCreators";
 
-const ProfileNav = () => (
+const ProfileNav = () => {
+
+  const dispatch = useAppDispatch();
+  const nav = useNavigate();
+  function Logout() {
+    Cookies.remove('token');
+    dispatch(getUserInfo());
+    // dispatch(logoutUser());
+    nav('/');
+  }
+
+  return(
   <nav className="profile_nav">
     <div className="profile_nav_content">
       <div className="profile_nav_preview">
@@ -40,14 +55,14 @@ const ProfileNav = () => (
           </NavLink>
         </div>
         <div className="profile_nav_link_box">
-          <NavLink to={"/"} className="profile_nav_link">
+          <button onClick={Logout} className="profile_nav_link">
             <FontAwesomeIcon icon={faRightFromBracket} />
             <span>Çıkış Yap</span>
-          </NavLink>
+          </button>
         </div>
       </div>
     </div>
   </nav>
-);
+)};
 
 export default ProfileNav;

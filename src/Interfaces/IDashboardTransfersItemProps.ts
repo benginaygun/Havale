@@ -1,9 +1,8 @@
 export interface IDashboardTransfersItemProps {
-  title: string;
-  desc: string;
-  date: string;
-  clock: string;
-  quantity: number;
-  state: string;
-  isInvenst: boolean;
+  reciver:string,
+  name:string,
+  date:string,
+  sum:number,
+  state:string,
+  isInvest:boolean
 }

@@ -3,6 +3,8 @@ import FinancialControl from "../../Components/FinancialControl/FinancialControl
 import HomeFeatures from "../../Components/HomeFeatures/HomeFeatures";
 import HomeHeader from "../../Components/HomeHeader/HomeHeader";
 import NewGeneration from "../../Components/NewGeneration/NewGeneration";
+import Login from "../../Components/Login/Login";
+import Register from "../../Components/Register/Register";
 
 const Home = () => {
     useEffect(() => {
@@ -15,6 +17,8 @@ const Home = () => {
       }, []);
     return(
     <div className="home">
+        <Login/>
+        <Register/>
         <HomeHeader/>
         <HomeFeatures/>
         <FinancialControl/>

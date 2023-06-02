@@ -4,6 +4,11 @@ import paraEkle from "../../assets/images/cuzdanına-para-ekle.png";
 import miktar from "../../assets/images/yatirilan-miktar.png";
 import transfer from "../../assets/images/kolayca-transfer.png";
 import arrow from "../../assets/images/ok-isareti.png";
+import { useDispatch } from "react-redux";
+import { getUserData } from "../../api/user";
+import { getUserDatas } from "../../redux/slices/user/userSlice";
+import { getUserInfo } from "../../redux/slices/user/actionCreators";
+import { useAppDispatch } from "../../redux/store/store";
 
 const HomeHeader = () => (
   <div className="home_header">

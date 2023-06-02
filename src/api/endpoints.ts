@@ -6,6 +6,13 @@ const Endpoints = {
     },
     USER:{
         GETUSERDATA:'authenticate/getuser'
+    },
+    ADMIN:{
+        WITHDRAWALS:'transfers/withdrawals',
+        ACCEPTWITHDRAWALS:'Transfers/AcceptTransfer/',
+        REJECTWITHDRAWALS:'Transfers/RejectTransfer/',
+        INVESTS:'transfers/invests',
+        TRANSFERS:'transfers/all'
     }
 }
 

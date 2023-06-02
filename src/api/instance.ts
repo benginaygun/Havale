@@ -10,6 +10,6 @@ const GetJwtCookie = () => {
   
 
 export const axiosInstance = axios.create({
-    baseURL: 'https://localhost:7072/api/',
+    baseURL: 'https://admin.hevalegonder.com/',
     headers: {'Authorization': 'Bearer '+ token}
 })

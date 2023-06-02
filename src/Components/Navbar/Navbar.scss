@@ -9,7 +9,7 @@
     background-color: #FBFBFB;
     padding: 10px 0;
     position: fixed;
-    z-index: 10;
+    z-index: 9;
     width: 100%;
     .navbar_content {
         display: grid;
@@ -44,13 +44,17 @@
     }
 }
 
-.navbar_profile_link{
-    font-size: 15px;
+.navbar_login_link,.navbar_register_link{
+    font-size: .8rem;
+    cursor: pointer;
     text-decoration: none;
     color: #000;
     display: flex;
     align-items: center;
-    gap: 5px;
+    gap: 10px;
+    background-color: transparent;
+    border: none;
+    font-family: 'Poppins' , sans-serif;
     transition: color 0.5s;
     &:hover{
         color: #1CA2FD;
@@ -66,7 +70,7 @@
 .navbar_profile{
     display: flex;
     gap: 30px;
-    button{
+    button.navbar_responsive{
         border: none;
         background-color: transparent;
         font-size: 20px;
@@ -85,7 +89,13 @@
             .navbar_links{
                 display: none;
             }
-            .navbar_profile_link{
+            .navbar_login_link{
+                span{
+                    display: none;
+                }
+                font-size: 26px;
+            }
+            .navbar_register_link{
                 span{
                     display: none;
                 }
@@ -101,3 +111,22 @@
     }
 }
 
+
+
+.navbar_profile_link{
+    text-decoration: none;
+    font-size: 0.8rem;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    transition: color 0.5s;
+    color: #000;
+    span{
+        background-color: #eee;
+        padding: 10px;
+        border-radius: 50%;
+    }
+    &:hover{
+        color: #1CA2FD;
+    }
+}
